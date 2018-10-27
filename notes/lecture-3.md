@@ -57,9 +57,9 @@
 - 일부 국가는 특정 데이터를 정부 기관에 공개해야 하는 법을 가지고 있음
 
 
-resilient : 회복력있는
-allotted : 할당된
-fluctuate : 계속 변동하는
-proprietary : 소유자의
-affordable : 알맞은
-pertain : 적용되다
+resilient : 회복력있는    
+allotted : 할당된    
+fluctuate : 계속 변동하는    
+proprietary : 소유자의    
+affordable : 알맞은    
+pertain : 적용되다    
