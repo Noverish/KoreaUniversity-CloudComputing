@@ -2,6 +2,7 @@
 # lecture 04
 
 ## Roles and Boundaries
+pass
 
 ## Cloud Characteristics
 ### 1. On-Demand Usage
@@ -47,9 +48,11 @@
 - PaaS 환경을 사용하고 작업하는 동안 클라우드 소비자 역할을 하는 조직은 SaaS 제품과 동일한 환경에 구축하기로 결정한 클라우드 서비스를 구축할 수 있습니다.
 
 ### 4. 비교
-#### Control Level(https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.1.png)
+#### Control Level
+![table-4.1](https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.1.png)
 
-#### Activities(https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.2.png)
+#### Activities
+![table-4.2](https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.2.png)
 
 ## Combining Cloud Delivery Models
 
