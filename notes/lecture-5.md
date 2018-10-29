@@ -1,5 +1,5 @@
 
-# lecture-6
+# lecture 5
 
 ## Broadband Networks and Internet Architecture
 

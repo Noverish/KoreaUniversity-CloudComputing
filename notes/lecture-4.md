@@ -5,6 +5,7 @@
 pass
 
 ## Cloud Characteristics
+
 ### 1. On-Demand Usage
 - 클라우드 사용자는 클라우드 기반 IT 리소스에 단독으로 액세스할 수 있으므로 클라우드 사용자는 이러한 IT 리소스를 직접 프로비저닝할 수 있습니다.
 
@@ -50,7 +51,6 @@ pass
 ### 4. 비교
 #### Control Level
 ![table-4.1](https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.1.png)
-
 #### Activities
 ![table-4.2](https://raw.githubusercontent.com/Noverish/KU-CC-2018-Fall/master/notes/images/table-4.2.png)
 
