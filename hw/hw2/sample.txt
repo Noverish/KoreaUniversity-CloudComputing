@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+//this code needs to running vm more than one
+
+FILE *openxentop;  // file pointer
+char isright[20];
+struct var{
+    char name[10];  // name
+    char state[8];  // state
+    int cpu_sec;  // execution time
+    double cpu_per;  // utilization
+};//vm info structure
+
+void getxentop();
+
+int main(){
+
+openxentop = popen("xentop -b d 1", "r"); // command xentop, d 1 means that xentop's info will be updated per 1sec
+
+while(1){
+printf("hello\n");
+getxentop();
+sleep(3);
+}
+pclose(openxentop);
+return 0;
+}
+
+void getxentop(){
+
+char topinfo[256];
+struct var topvar;
+int count = 2; // assume that two vm are running...
+while(fgets(topinfo, 256, openxentop) != NULL){
+    memset(isright,0,sizeof(isright));
+    sscanf(topinfo,"%s",isright);
+    if(strcmp(isright,"NAME") == 0) continue; // we just need vm's info...
+    if(strcmp(isright,"Domain-0")== 0) continue;
+    
+    sscanf(topinfo,"%s %s %d %lf", topvar.name, topvar.state, &topvar.cpu_sec, &topvar.cpu_per);
+    printf("%s %s %d %.1f\n", topvar.name, topvar.state, topvar.cpu_sec, topvar.cpu_per);
+    count--;
+    if(count==0) break;
+    }
+    
+}
