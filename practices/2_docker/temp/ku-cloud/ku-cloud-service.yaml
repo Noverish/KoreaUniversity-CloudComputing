@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: ku-cloud-service
+spec:
+  selector:
+    app: ku-cloud
+  type: NodePort
+  ports:
+  - name: ku-cloud
+    port: 3000
+    targetPort: 3000

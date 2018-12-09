@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ku-cloud
+  labels:
+    app: ku-cloud
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ku-cloud
+  template:
+    metadata:
+      labels:
+        app: ku-cloud
+    spec:
+      containers:
+      - name: ku-cloud
+        image: lesomnus/ku-cloud:0.1
+        resources:
+          limits:
+            cpu: "0.5"
+          requests:
+            cpu: "0.25"
+        ports:
+        - containerPort: 3000
+        imagePullPolicy: IfNotPresent
